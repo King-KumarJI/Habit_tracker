@@ -1,0 +1,413 @@
+# AI Habit Tracker with Focus Mode and Behavioral Assistance
+
+## Project Report
+
+---
+
+# 1. Introduction
+
+The **AI Habit Tracker with Focus Mode** is a web-based productivity and self-improvement application designed to help users build positive habits, eliminate harmful behaviors, and improve concentration through guided focus sessions and AI-based behavioral assistance.
+
+The system combines several modern web technologies including frontend interfaces, backend APIs, database storage, and AI interaction modules. The application tracks user habits, monitors progress, provides motivational assistance, and includes a focus mode environment with background music to improve concentration.
+
+The main goal of this system is to create an interactive and intelligent environment where users can develop productive routines while reducing harmful habits.
+
+The project integrates features such as:
+
+* User authentication
+* Habit creation and tracking
+* Behavioral classification of habits
+* AI-assisted conversation
+* Focus timer with music
+* Experience (XP) system
+* Visual progress analytics
+* Gamified avatar system
+
+The platform is designed to be accessible across multiple devices including desktops, laptops, tablets, and mobile browsers.
+
+---
+
+# 2. Problem Statement
+
+Many individuals struggle with:
+
+* Maintaining daily productive habits
+* Eliminating harmful routines
+* Staying focused during work or study sessions
+* Tracking personal progress effectively
+
+Existing productivity tools often lack intelligent behavior detection or personalized assistance.
+
+This project addresses these issues by introducing an AI-powered system capable of:
+
+* Detecting potentially harmful habits
+* Initiating supportive conversations
+* Tracking long-term behavioral patterns
+* Encouraging consistent progress through gamification
+
+---
+
+# 3. Objectives of the Project
+
+The primary objectives of the system include:
+
+1. Develop a habit tracking platform for daily behavior monitoring.
+2. Identify harmful habits and provide AI-based support.
+3. Implement a focus mode environment for deep work sessions.
+4. Provide progress visualization using charts.
+5. Create a gamified experience using XP and avatars.
+6. Enable secure user authentication and account management.
+7. Maintain cross-device compatibility for accessibility.
+
+---
+
+# 4. System Overview
+
+The system is structured using a **client-server architecture**.
+
+The frontend interface communicates with the backend server through REST APIs.
+
+The backend processes user requests, interacts with the database, and performs habit analysis and AI responses.
+
+System components include:
+
+Frontend Interface
+Backend API Server
+Database Storage
+AI Interaction Module
+Focus Mode Environment
+
+---
+
+# 5. System Architecture
+
+The architecture of the system is composed of the following layers:
+
+## 5.1 Presentation Layer (Frontend)
+
+The frontend layer is responsible for user interaction and visual representation.
+
+Technologies used include:
+
+* HTML
+* CSS
+* JavaScript
+* Chart.js for visualization
+
+Responsibilities:
+
+User login and registration interface
+Habit creation and tracking interface
+Focus mode environment
+Progress dashboards
+Chat interface for AI interaction
+
+---
+
+## 5.2 Application Layer (Backend)
+
+The backend server processes requests and manages application logic.
+
+Key responsibilities:
+
+Authentication processing
+Habit classification
+XP calculation
+User data retrieval
+AI interaction routing
+Focus session tracking
+
+---
+
+## 5.3 Data Layer (Database)
+
+The database stores persistent user and habit information.
+
+Data stored includes:
+
+User accounts
+Habit records
+Completion history
+XP scores
+Avatar levels
+Focus session logs
+
+---
+
+# 6. Technologies Used
+
+## Frontend Technologies
+
+HTML
+Used to structure web pages and user interface elements.
+
+CSS
+Used to design visual layouts and responsive interfaces.
+
+JavaScript
+Used to handle application logic, user interaction, and API communication.
+
+Chart.js
+Used to generate progress visualization graphs.
+
+---
+
+## Backend Technologies
+
+REST API architecture is used to communicate between frontend and server.
+
+Backend operations include:
+
+User authentication
+Habit classification
+Database communication
+AI response processing
+
+---
+
+## Database
+
+A relational database is used to store structured application data.
+
+Typical tables include:
+
+Users
+Habits
+Habit completion logs
+Focus sessions
+XP records
+
+---
+
+# 7. System Features
+
+## 7.1 User Authentication System
+
+The application supports:
+
+User Registration
+User Login
+Email Verification
+Password Change
+Account Deletion
+
+Registration requires:
+
+User name
+Email address
+Password
+
+After registration, the system may require email verification before account activation.
+
+---
+
+## 7.2 Habit Management
+
+Users can create habits and assign them to specific days.
+
+Each habit entry includes:
+
+Habit name
+Scheduled day
+Completion status
+Habit type classification
+
+Habit categories include:
+
+Positive habits
+Neutral habits
+Potentially harmful habits
+
+---
+
+## 7.3 Habit Classification
+
+When a user creates a habit, the backend system evaluates the habit description.
+
+If the system detects a potentially harmful habit, it triggers the AI assistance interface.
+
+Example:
+
+Habit: “Excessive gaming”
+Classification: BAD habit
+
+The AI assistant then initiates a supportive conversation to encourage improvement.
+
+---
+
+## 7.4 AI Behavioral Assistance
+
+When harmful behavior is detected, the system opens a chat assistant.
+
+The assistant can:
+
+Provide suggestions
+Offer motivational messages
+Encourage behavior change
+Guide users toward healthier routines
+
+Users can interact with the assistant through a chat interface.
+
+---
+
+## 7.5 Focus Mode System
+
+Focus mode is designed to eliminate distractions and encourage deep work sessions.
+
+Features include:
+
+Fullscreen mode activation
+Customizable focus timer
+Background music playback
+Tab-switch detection
+Session completion notification
+
+The user selects:
+
+Focus duration
+Music type
+
+During focus mode:
+
+User settings become locked
+Fullscreen mode is activated
+Music plays in background
+Timer tracks session duration
+
+---
+
+## 7.6 Gamification System
+
+To motivate users, the system includes a gamification structure.
+
+Users earn **Experience Points (XP)** when they complete habits.
+
+XP is accumulated over time and contributes to avatar progression.
+
+---
+
+## 7.7 Avatar Progression System
+
+The avatar visually represents the user’s progress.
+
+Stages include:
+
+Stage 1: Beginner (Skinny avatar)
+Stage 2: Developing (Normal avatar)
+Stage 3: Active (Fit avatar)
+Stage 4: Advanced (Buff avatar)
+
+Avatar upgrades occur automatically as XP increases.
+
+---
+
+## 7.8 Progress Visualization
+
+User progress is displayed through charts.
+
+Charts display:
+
+Daily XP accumulation
+Habit completion trends
+Long-term productivity patterns
+
+Visualization is implemented using Chart.js.
+
+---
+
+# 8. Focus Mode Workflow
+
+1. User selects focus duration.
+2. User selects background music.
+3. Focus mode activates.
+4. Application enters fullscreen mode.
+5. Background music starts playing.
+6. Timer counts down session duration.
+7. User is prevented from switching tabs.
+8. When timer ends:
+
+   * Music stops
+   * Fullscreen exits
+   * User receives completion notification
+
+---
+
+# 9. Security Features
+
+The system includes several security mechanisms.
+
+Session timeout automatically logs users out after inactivity.
+
+Authentication tokens ensure protected access to user data.
+
+Password change and account deletion features provide full account control.
+
+User sessions are stored locally to maintain login state.
+
+---
+
+# 10. Cross-Platform Compatibility
+
+The application is designed to work across multiple platforms.
+
+Supported devices include:
+
+Desktop computers
+Laptop computers
+Tablets
+Mobile browsers
+
+Responsive design ensures usability on different screen sizes.
+
+---
+
+# 11. Advantages of the System
+
+Encourages productive habits
+Provides intelligent behavioral assistance
+Includes distraction-free focus mode
+Gamifies personal development
+Tracks long-term progress
+Accessible on multiple devices
+
+---
+
+# 12. Limitations
+
+AI assistance depends on backend model capabilities.
+
+Music playback may be restricted by browser autoplay policies.
+
+Focus mode cannot fully block external applications outside the browser.
+
+---
+
+# 13. Future Enhancements
+
+Future improvements may include:
+
+Integration with machine learning models for habit classification
+
+Personalized AI coaching
+
+Mobile application version
+
+Advanced analytics dashboard
+
+Distraction blocking using browser extensions
+
+Emotion and mood tracking
+
+Voice interaction with AI assistant
+
+---
+
+# 14. Conclusion
+
+The AI Habit Tracker with Focus Mode demonstrates how modern web technologies can be used to create intelligent productivity tools.
+
+By combining habit tracking, AI behavioral support, gamification, and focus-enhancing features, the application helps users develop consistent routines and improve personal productivity.
+
+The system serves as a practical demonstration of how AI and behavioral design principles can be integrated into real-world productivity applications.
+
+This project highlights the potential for intelligent software systems to assist individuals in achieving long-term self-improvement and personal development.

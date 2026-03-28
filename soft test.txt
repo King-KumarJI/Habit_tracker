@@ -1,0 +1,482 @@
+# Software Testing Report
+
+## AI Habit Tracker with Focus Mode and Behavioral Assistance
+
+---
+
+# 1. Introduction
+
+Software testing is a crucial phase in the software development lifecycle that ensures the system functions correctly, reliably, and efficiently. The purpose of testing is to identify errors, verify that the application meets specified requirements, and ensure that the software performs as expected under various conditions.
+
+This report focuses exclusively on the **software testing perspective** of the project **“AI Habit Tracker with Focus Mode and Behavioral Assistance.”**
+
+The testing process aims to validate that all major modules of the system operate correctly, including:
+
+* User Authentication System
+* Habit Management System
+* AI Behavioral Assistance System
+* Focus Mode System
+* Dashboard and Progress Visualization
+* Account Management Features
+
+Testing ensures that the application remains stable, secure, and usable across different devices such as **mobile phones, tablets, laptops, and desktop systems**.
+
+---
+
+# 2. Objectives of Testing
+
+The objectives of software testing for this project include:
+
+1. Verify that all system features operate according to requirements.
+2. Identify and eliminate functional errors.
+3. Ensure proper communication between frontend and backend components.
+4. Validate data integrity within the database.
+5. Confirm that the system behaves correctly under different user inputs.
+6. Evaluate the usability and reliability of the focus mode system.
+7. Ensure security and authentication mechanisms function correctly.
+
+---
+
+# 3. Scope of Testing
+
+The scope of testing includes the following components of the system:
+
+### 3.1 Authentication Module
+
+* User registration
+* Login functionality
+* Email verification
+* Password change
+* Account deletion
+
+### 3.2 Habit Management Module
+
+* Habit creation
+* Habit classification
+* Habit completion
+* Habit deletion
+
+### 3.3 AI Assistance Module
+
+* Detection of harmful habits
+* AI chat response system
+
+### 3.4 Focus Mode Module
+
+* Timer functionality
+* Background music playback
+* Fullscreen activation
+* Focus session completion
+
+### 3.5 Dashboard Module
+
+* XP tracking
+* Avatar progression
+* Progress chart visualization
+
+---
+
+# 4. Types of Testing Performed
+
+Several types of software testing were applied during development.
+
+---
+
+## 4.1 Unit Testing
+
+Unit testing focuses on testing individual functions and components independently.
+
+Examples include:
+
+* Login function validation
+* Habit creation function
+* Timer logic in focus mode
+* Chart generation function
+
+Each module was tested separately to ensure correct functionality before integration.
+
+---
+
+## 4.2 Integration Testing
+
+Integration testing ensures that different modules of the application interact correctly.
+
+Examples include:
+
+* Login system interacting with the database
+* Habit creation communicating with the backend API
+* Dashboard retrieving user progress data
+
+This testing ensures that data flows correctly between components.
+
+---
+
+## 4.3 Functional Testing
+
+Functional testing verifies that each feature behaves according to its intended purpose.
+
+For example:
+
+* Creating a habit should store data in the database.
+* Completing a habit should increase XP.
+* Bad habit detection should activate the AI assistant.
+
+---
+
+## 4.4 System Testing
+
+System testing evaluates the entire application as a complete system.
+
+The objective is to ensure that all modules work together correctly.
+
+Testing included:
+
+* Full user workflow
+* Habit tracking lifecycle
+* Focus mode session execution
+* AI interaction functionality
+
+---
+
+## 4.5 Usability Testing
+
+Usability testing evaluates how easy the system is for users to interact with.
+
+This includes testing:
+
+* Interface navigation
+* User feedback messages
+* Ease of habit creation
+* Focus mode accessibility
+
+The interface was designed to remain simple and intuitive for users.
+
+---
+
+## 4.6 Security Testing
+
+Security testing ensures that user data is protected and unauthorized access is prevented.
+
+Security tests included:
+
+* Login authentication validation
+* Session timeout verification
+* Password change functionality
+* Account deletion security
+
+---
+
+## 4.7 Compatibility Testing
+
+The system was tested across different devices and browsers to ensure compatibility.
+
+Platforms tested include:
+
+* Desktop browsers
+* Laptop browsers
+* Mobile browsers
+* Tablet devices
+
+The system maintained consistent functionality across these platforms.
+
+---
+
+# 5. Testing Environment
+
+The application was tested under the following environment conditions:
+
+Operating Systems:
+
+* Windows 10
+* Windows 11
+* Android (Mobile browser testing)
+
+Browsers:
+
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+
+Hardware:
+
+* Desktop Computer
+* Laptop
+* Mobile Phone
+* Tablet
+
+---
+
+# 6. Test Data
+
+Test data included:
+
+* Valid user email addresses
+* Invalid login credentials
+* Habit names representing both positive and negative behaviors
+* Various focus session durations
+
+Example habit test data:
+
+* “Morning Exercise”
+* “Read Books”
+* “Late Night Gaming”
+* “Smoking”
+
+These were used to test habit classification and AI interaction.
+
+---
+
+# 7. Test Case Design
+
+Test cases were created to evaluate different scenarios within the application.
+
+Each test case includes:
+
+* Test Case ID
+* Test Description
+* Input Data
+* Expected Output
+* Actual Result
+* Test Status
+
+---
+
+# 8. Test Cases
+
+## Test Case 1
+
+Test Case ID: TC01
+Module: User Registration
+Description: Verify that a new user can register successfully.
+Input: Valid name, email, and password
+Expected Result: User account created and verification initiated
+Status: Pass
+
+---
+
+## Test Case 2
+
+Test Case ID: TC02
+Module: User Login
+Description: Verify login with correct credentials
+Input: Valid email and password
+Expected Result: User redirected to dashboard
+Status: Pass
+
+---
+
+## Test Case 3
+
+Test Case ID: TC03
+Module: User Login
+Description: Verify login with incorrect password
+Input: Valid email, wrong password
+Expected Result: Error message displayed
+Status: Pass
+
+---
+
+## Test Case 4
+
+Test Case ID: TC04
+Module: Email Verification
+Description: Verify account activation using verification code
+Input: Correct verification code
+Expected Result: Account activated
+Status: Pass
+
+---
+
+## Test Case 5
+
+Test Case ID: TC05
+Module: Habit Creation
+Description: Verify creation of new habit
+Input: Habit name and day
+Expected Result: Habit stored and displayed in list
+Status: Pass
+
+---
+
+## Test Case 6
+
+Test Case ID: TC06
+Module: Habit Detection
+Description: Verify detection of harmful habit
+Input: Harmful habit description
+Expected Result: AI assistant activated
+Status: Pass
+
+---
+
+## Test Case 7
+
+Test Case ID: TC07
+Module: Habit Completion
+Description: Verify marking habit as complete
+Input: Click completion checkbox
+Expected Result: Habit marked complete and XP awarded
+Status: Pass
+
+---
+
+## Test Case 8
+
+Test Case ID: TC08
+Module: Habit Deletion
+Description: Verify deletion of habit
+Input: Delete button pressed
+Expected Result: Habit removed from list
+Status: Pass
+
+---
+
+## Test Case 9
+
+Test Case ID: TC09
+Module: Dashboard
+Description: Verify XP display on dashboard
+Input: Completed habits
+Expected Result: XP displayed correctly
+Status: Pass
+
+---
+
+## Test Case 10
+
+Test Case ID: TC10
+Module: Avatar System
+Description: Verify avatar stage update
+Input: Increased XP level
+Expected Result: Avatar image updated
+Status: Pass
+
+---
+
+## Test Case 11
+
+Test Case ID: TC11
+Module: Focus Mode
+Description: Verify focus mode activation
+Input: Valid focus time
+Expected Result: Fullscreen mode activated and timer starts
+Status: Pass
+
+---
+
+## Test Case 12
+
+Test Case ID: TC12
+Module: Focus Timer
+Description: Verify countdown timer accuracy
+Input: 10-minute focus session
+Expected Result: Timer decreases correctly
+Status: Pass
+
+---
+
+## Test Case 13
+
+Test Case ID: TC13
+Module: Focus Music
+Description: Verify background music playback
+Input: Selected music option
+Expected Result: Music starts automatically
+Status: Pass
+
+---
+
+## Test Case 14
+
+Test Case ID: TC14
+Module: Focus Completion
+Description: Verify behavior when focus session ends
+Input: Timer reaches zero
+Expected Result: Music stops and fullscreen exits
+Status: Pass
+
+---
+
+## Test Case 15
+
+Test Case ID: TC15
+Module: Tab Switching
+Description: Verify detection of tab change during focus mode
+Input: User switches browser tab
+Expected Result: Warning message displayed
+Status: Pass
+
+---
+
+## Test Case 16
+
+Test Case ID: TC16
+Module: Chart Visualization
+Description: Verify chart generation for daily XP
+Input: User progress data
+Expected Result: Chart displayed correctly
+Status: Pass
+
+---
+
+## Test Case 17
+
+Test Case ID: TC17
+Module: Password Change
+Description: Verify password update functionality
+Input: Valid email and new password
+Expected Result: Password updated successfully
+Status: Pass
+
+---
+
+## Test Case 18
+
+Test Case ID: TC18
+Module: Account Deletion
+Description: Verify user account removal
+Input: Delete account request
+Expected Result: User removed from system
+Status: Pass
+
+---
+
+## Test Case 19
+
+Test Case ID: TC19
+Module: Session Timeout
+Description: Verify automatic logout after inactivity
+Input: No activity for defined session period
+Expected Result: User redirected to login page
+Status: Pass
+
+---
+
+## Test Case 20
+
+Test Case ID: TC20
+Module: AI Chat System
+Description: Verify AI response generation
+Input: User message in chat
+Expected Result: AI returns a response message
+Status: Pass
+
+---
+
+# 9. Testing Results Summary
+
+All modules of the system were tested successfully. The system performed as expected under normal usage conditions. Minor browser-related issues such as autoplay restrictions were resolved through adjustments in implementation.
+
+The application demonstrated stable performance during testing and showed compatibility across multiple devices.
+
+---
+
+# 10. Conclusion
+
+Software testing confirmed that the **AI Habit Tracker with Focus Mode** functions correctly and satisfies its intended requirements.
+
+The testing process verified the reliability of major system modules including authentication, habit tracking, AI assistance, and focus mode functionality.
+
+The application provides a stable and effective productivity tool capable of assisting users in building better habits and maintaining focused work sessions.
+
+Future testing improvements may include automated testing frameworks, performance testing under high user load, and expanded security testing for production deployment.
