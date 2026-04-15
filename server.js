@@ -174,7 +174,7 @@ Habit: ${name}
   /* SAVE GOOD HABIT */
 
   const q=`
-  INSERT INTO habits(user_id,habit_name,day)
+  INSERT INTO habits(user_id,habit_name,day_of_week)
   VALUES($1,$2,$3)
   RETURNING id
   `
@@ -221,7 +221,7 @@ app.get("/habits/:user", async (req, res) => {
     AND DATE(l.log_date)=CURRENT_DATE
    ) AS completed
    FROM habits h
-   WHERE user_id=$1 AND day=$2
+   WHERE user_id=$1 AND day_of_week=$2
   `,[userId,today])
 
   res.json(data.rows)
@@ -334,6 +334,9 @@ app.post("/ai-fix",(req,res)=>{
 
  if(habit.includes("late")){
   advice="Set a fixed sleep alarm and avoid screens."
+ }
+  if(habit.includes("masturbation")){
+  advice="try cold water face splashing or walking."
  }
 
  res.json({advice})
